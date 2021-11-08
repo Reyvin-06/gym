@@ -208,7 +208,7 @@
             this.guna2Button1.Font = new System.Drawing.Font("Lucida Console", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button1.ForeColor = System.Drawing.Color.Black;
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button1.Image")));
+            this.guna2Button1.Image = global::Gym.Properties.Resources.home_house_icon_icons_com_49851;
             this.guna2Button1.ImageOffset = new System.Drawing.Point(-6, -2);
             this.guna2Button1.ImageSize = new System.Drawing.Size(30, 30);
             this.guna2Button1.Location = new System.Drawing.Point(12, 196);
@@ -275,6 +275,7 @@
             // 
             // clientes1
             // 
+            this.clientes1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(58)))), ((int)(((byte)(58)))));
             this.clientes1.Location = new System.Drawing.Point(0, 0);
             this.clientes1.Name = "clientes1";
             this.clientes1.Size = new System.Drawing.Size(1356, 900);

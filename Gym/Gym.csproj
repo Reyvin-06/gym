@@ -122,6 +122,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="gymDataSet.xsc">
       <DependentUpon>gymDataSet.xsd</DependentUpon>
@@ -146,6 +147,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar-check_icon-icons.com_56836.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home_house_icon-icons.com_49851.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\receipt_shopping_icon-icons.com_49849 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\man_people_user_icon-icons.com_49856.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1455554322_line-47_icon-icons.com_53325.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\banknotespaymentmoney_billetesdebanco_pag_3773.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
