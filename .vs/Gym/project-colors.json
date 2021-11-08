@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "d02c2f32-ce0e-4005-b4e5-957002102c03": {
+      "ProjectGuid": "d02c2f32-ce0e-4005-b4e5-957002102c03",
+      "DisplayName": "Gym",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
