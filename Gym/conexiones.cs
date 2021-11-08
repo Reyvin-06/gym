@@ -13,6 +13,8 @@ namespace Gym
         SqlConnection cn = new SqlConnection("Data Source=DESKTOP-0EN1J76;Initial Catalog=gym;Integrated Security=True");
         return cn;
         }
+
+        //prueba para el commit
         
     }
         
