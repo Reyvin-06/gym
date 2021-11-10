@@ -1,7 +1,6 @@
 C:\Users\Reyvin Camacho\source\repos\Gym\Gym\bin\Debug\Gym.exe.config
 C:\Users\Reyvin Camacho\source\repos\Gym\Gym\bin\Debug\Gym.exe
 C:\Users\Reyvin Camacho\source\repos\Gym\Gym\bin\Debug\Gym.pdb
-C:\Users\Reyvin Camacho\source\repos\Gym\Gym\bin\Debug\Guna.UI2.dll
 C:\Users\Reyvin Camacho\source\repos\Gym\Gym\obj\Debug\Gym.csproj.AssemblyReference.cache
 C:\Users\Reyvin Camacho\source\repos\Gym\Gym\obj\Debug\Gym.csproj.SuggestedBindingRedirects.cache
 C:\Users\Reyvin Camacho\source\repos\Gym\Gym\obj\Debug\Gym.Properties.Resources.resources
@@ -15,3 +14,6 @@ C:\Users\Reyvin Camacho\source\repos\Gym\Gym\obj\Debug\Gym.Clientes.resources
 C:\Users\Reyvin Camacho\source\repos\Gym\Gym\obj\Debug\Gym.cu_Asistencia.resources
 C:\Users\Reyvin Camacho\source\repos\Gym\Gym\obj\Debug\Gym.cu_registros.resources
 C:\Users\Reyvin Camacho\source\repos\Gym\Gym\obj\Debug\Gym.cu_pago.resources
+C:\Users\Reyvin Camacho\source\repos\gym\Gym\obj\Debug\Gym.csproj.CopyComplete
+C:\Users\Reyvin Camacho\Source\Repos\gym\Gym\obj\Debug\Gym.Login.resources
+C:\Users\Reyvin Camacho\Source\Repos\gym\Gym\obj\Debug\Gym.Recuperarcontraseña.resources
