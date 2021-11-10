@@ -59,7 +59,6 @@ namespace Gym
             {
                 lb_correoincorrecto.Text = "El correo no coincide";
             }
-            
            
 
         }

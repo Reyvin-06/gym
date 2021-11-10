@@ -83,6 +83,7 @@
             this.txtusuario.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtusuario.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(75)))), ((int)(((byte)(10)))));
             this.txtusuario.FocusedState.Parent = this.txtusuario;
+            this.txtusuario.Font = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtusuario.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(75)))), ((int)(((byte)(10)))));
             this.txtusuario.HoverState.Parent = this.txtusuario;
             this.txtusuario.Location = new System.Drawing.Point(461, 224);
@@ -136,17 +137,19 @@
             this.txtcontraseña.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtcontraseña.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(75)))), ((int)(((byte)(10)))));
             this.txtcontraseña.FocusedState.Parent = this.txtcontraseña;
+            this.txtcontraseña.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtcontraseña.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(75)))), ((int)(((byte)(10)))));
             this.txtcontraseña.HoverState.Parent = this.txtcontraseña;
             this.txtcontraseña.Location = new System.Drawing.Point(461, 279);
             this.txtcontraseña.Name = "txtcontraseña";
-            this.txtcontraseña.PasswordChar = '\0';
+            this.txtcontraseña.PasswordChar = '●';
             this.txtcontraseña.PlaceholderText = "";
             this.txtcontraseña.SelectedText = "";
             this.txtcontraseña.ShadowDecoration.Parent = this.txtcontraseña;
             this.txtcontraseña.Size = new System.Drawing.Size(225, 36);
             this.txtcontraseña.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtcontraseña.TabIndex = 7;
+            this.txtcontraseña.UseSystemPasswordChar = true;
             // 
             // guna2ControlBox1
             // 
