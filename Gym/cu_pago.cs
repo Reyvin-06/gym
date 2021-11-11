@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Gym
 {
@@ -15,6 +16,14 @@ namespace Gym
         public cu_pago()
         {
             InitializeComponent();
+        }
+
+        SqlConnection cn = new SqlConnection("Data Source=DESKTOP-0EN1J76;Initial Catalog=gym;Integrated Security=True");
+
+        private void bn_confirmar_Click(object sender, EventArgs e)
+        {
+            
+            
         }
     }
 }
