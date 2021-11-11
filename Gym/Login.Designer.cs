@@ -50,7 +50,7 @@
             // 
             // guna2GradientPanel1
             // 
-            this.guna2GradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("guna2GradientPanel1.BackgroundImage")));
+            this.guna2GradientPanel1.BackgroundImage = global::Gym.Properties.Resources.javier_santos_guzman_9MR78HGoflw_unsplash;
             this.guna2GradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.guna2GradientPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.guna2GradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(43)))), ((int)(((byte)(43)))));
@@ -87,6 +87,7 @@
             this.txtusuario.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(75)))), ((int)(((byte)(10)))));
             this.txtusuario.HoverState.Parent = this.txtusuario;
             this.txtusuario.Location = new System.Drawing.Point(461, 224);
+            this.txtusuario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtusuario.Name = "txtusuario";
             this.txtusuario.PasswordChar = '\0';
             this.txtusuario.PlaceholderText = "";
@@ -141,6 +142,7 @@
             this.txtcontraseña.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(75)))), ((int)(((byte)(10)))));
             this.txtcontraseña.HoverState.Parent = this.txtcontraseña;
             this.txtcontraseña.Location = new System.Drawing.Point(461, 279);
+            this.txtcontraseña.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtcontraseña.Name = "txtcontraseña";
             this.txtcontraseña.PasswordChar = '●';
             this.txtcontraseña.PlaceholderText = "";

@@ -103,6 +103,16 @@ namespace Gym.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap javier_santos_guzman_9MR78HGoflw_unsplash {
+            get {
+                object obj = ResourceManager.GetObject("javier-santos-guzman-9MR78HGoflw-unsplash", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap man_people_user_icon_icons_com_49856 {
             get {
                 object obj = ResourceManager.GetObject("man_people_user_icon-icons.com_49856", resourceCulture);
