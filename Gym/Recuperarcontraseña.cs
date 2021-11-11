@@ -25,8 +25,9 @@ namespace Gym
 
                 //sistema.gimnasiosanangel@gmail.com
                 //gymsanangel247
-
-                mmsg.To.Add("estebandk.111@gmail.com");
+                //Prueba cambiando correo
+                //mmsg.To.Add("omaribarra25@hotmail.com");
+                mmsg.To.Add("ing.oaio99@gmail.com");
                 mmsg.Subject = "Recuperación de contraseña";
                 mmsg.SubjectEncoding = System.Text.Encoding.UTF8;
                 //mmsg.Bcc.Add("estebandk.111@gmail.com");

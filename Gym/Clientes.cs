@@ -16,7 +16,7 @@ namespace Gym
         {
             InitializeComponent();
         }
-        SqlConnection cn = new SqlConnection("Data Source=DESKTOP-0EN1J76;Initial Catalog=gym;Integrated Security=True");
+        SqlConnection cn = new SqlConnection("Data Source=DESKTOP-ULLHPRS;Initial Catalog=gym;Integrated Security=True");
         //Data Source=DESKTOP-0EN1J76;Initial Catalog=gym;Integrated Security=True
 
 
@@ -76,6 +76,11 @@ namespace Gym
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void dgv_clientes_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
