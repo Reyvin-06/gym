@@ -41,17 +41,17 @@
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
+            this.cu_inicio1 = new Gym.cu_inicio();
+            this.clientes1 = new Gym.Clientes();
+            this.cu_Asistencia1 = new Gym.cu_Asistencia();
+            this.cu_registros1 = new Gym.cu_registros();
+            this.cu_pago1 = new Gym.cu_pago();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.Fecha = new System.Windows.Forms.Label();
             this.Hora = new System.Windows.Forms.Label();
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.Fechahora = new System.Windows.Forms.Timer(this.components);
-            this.cu_inicio1 = new Gym.cu_inicio();
-            this.clientes1 = new Gym.Clientes();
-            this.cu_Asistencia1 = new Gym.cu_Asistencia();
-            this.cu_registros1 = new Gym.cu_registros();
-            this.cu_pago1 = new Gym.cu_pago();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             this.guna2Panel2.SuspendLayout();
@@ -77,7 +77,7 @@
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(282, 900);
+            this.guna2Panel1.Size = new System.Drawing.Size(282, 788);
             this.guna2Panel1.TabIndex = 0;
             // 
             // btn_pagos
@@ -227,15 +227,15 @@
             this.guna2Panel2.AutoRoundedCorners = true;
             this.guna2Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(58)))), ((int)(((byte)(58)))));
             this.guna2Panel2.BorderColor = System.Drawing.Color.Transparent;
-            this.guna2Panel2.BorderRadius = 449;
+            this.guna2Panel2.BorderRadius = 393;
             this.guna2Panel2.Controls.Add(this.guna2ControlBox1);
             this.guna2Panel2.Controls.Add(this.guna2Panel4);
             this.guna2Panel2.Controls.Add(this.guna2Panel3);
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.guna2Panel2.Location = new System.Drawing.Point(244, 0);
+            this.guna2Panel2.Location = new System.Drawing.Point(240, 0);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
-            this.guna2Panel2.Size = new System.Drawing.Size(1356, 900);
+            this.guna2Panel2.Size = new System.Drawing.Size(1360, 788);
             this.guna2Panel2.TabIndex = 1;
             this.guna2Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel2_Paint);
             // 
@@ -245,7 +245,7 @@
             this.guna2ControlBox1.FillColor = System.Drawing.Color.Transparent;
             this.guna2ControlBox1.HoverState.Parent = this.guna2ControlBox1;
             this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(1311, 12);
+            this.guna2ControlBox1.Location = new System.Drawing.Point(1315, 12);
             this.guna2ControlBox1.Name = "guna2ControlBox1";
             this.guna2ControlBox1.ShadowDecoration.Parent = this.guna2ControlBox1;
             this.guna2ControlBox1.Size = new System.Drawing.Size(33, 29);
@@ -264,6 +264,45 @@
             this.guna2Panel4.ShadowDecoration.Parent = this.guna2Panel4;
             this.guna2Panel4.Size = new System.Drawing.Size(1324, 811);
             this.guna2Panel4.TabIndex = 2;
+            // 
+            // cu_inicio1
+            // 
+            this.cu_inicio1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(58)))), ((int)(((byte)(58)))));
+            this.cu_inicio1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cu_inicio1.Location = new System.Drawing.Point(0, 0);
+            this.cu_inicio1.Name = "cu_inicio1";
+            this.cu_inicio1.Size = new System.Drawing.Size(1324, 811);
+            this.cu_inicio1.TabIndex = 0;
+            // 
+            // clientes1
+            // 
+            this.clientes1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(58)))), ((int)(((byte)(58)))));
+            this.clientes1.Location = new System.Drawing.Point(0, 0);
+            this.clientes1.Name = "clientes1";
+            this.clientes1.Size = new System.Drawing.Size(1356, 900);
+            this.clientes1.TabIndex = 1;
+            // 
+            // cu_Asistencia1
+            // 
+            this.cu_Asistencia1.Location = new System.Drawing.Point(0, 0);
+            this.cu_Asistencia1.Name = "cu_Asistencia1";
+            this.cu_Asistencia1.Size = new System.Drawing.Size(1324, 811);
+            this.cu_Asistencia1.TabIndex = 2;
+            // 
+            // cu_registros1
+            // 
+            this.cu_registros1.Location = new System.Drawing.Point(-3, 0);
+            this.cu_registros1.Name = "cu_registros1";
+            this.cu_registros1.Size = new System.Drawing.Size(1324, 811);
+            this.cu_registros1.TabIndex = 3;
+            // 
+            // cu_pago1
+            // 
+            this.cu_pago1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(58)))), ((int)(((byte)(58)))));
+            this.cu_pago1.Location = new System.Drawing.Point(-3, 0);
+            this.cu_pago1.Name = "cu_pago1";
+            this.cu_pago1.Size = new System.Drawing.Size(1324, 811);
+            this.cu_pago1.TabIndex = 4;
             // 
             // guna2Panel3
             // 
@@ -311,51 +350,13 @@
             this.Fechahora.Enabled = true;
             this.Fechahora.Tick += new System.EventHandler(this.Fechahora_Tick);
             // 
-            // cu_inicio1
-            // 
-            this.cu_inicio1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(58)))), ((int)(((byte)(58)))));
-            this.cu_inicio1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.cu_inicio1.Location = new System.Drawing.Point(0, 0);
-            this.cu_inicio1.Name = "cu_inicio1";
-            this.cu_inicio1.Size = new System.Drawing.Size(1324, 811);
-            this.cu_inicio1.TabIndex = 0;
-            // 
-            // clientes1
-            // 
-            this.clientes1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(58)))), ((int)(((byte)(58)))));
-            this.clientes1.Location = new System.Drawing.Point(0, 0);
-            this.clientes1.Name = "clientes1";
-            this.clientes1.Size = new System.Drawing.Size(1356, 900);
-            this.clientes1.TabIndex = 1;
-            // 
-            // cu_Asistencia1
-            // 
-            this.cu_Asistencia1.Location = new System.Drawing.Point(0, 0);
-            this.cu_Asistencia1.Name = "cu_Asistencia1";
-            this.cu_Asistencia1.Size = new System.Drawing.Size(1324, 811);
-            this.cu_Asistencia1.TabIndex = 2;
-            // 
-            // cu_registros1
-            // 
-            this.cu_registros1.Location = new System.Drawing.Point(-3, 0);
-            this.cu_registros1.Name = "cu_registros1";
-            this.cu_registros1.Size = new System.Drawing.Size(1324, 811);
-            this.cu_registros1.TabIndex = 3;
-            // 
-            // cu_pago1
-            // 
-            this.cu_pago1.Location = new System.Drawing.Point(-3, 0);
-            this.cu_pago1.Name = "cu_pago1";
-            this.cu_pago1.Size = new System.Drawing.Size(1324, 811);
-            this.cu_pago1.TabIndex = 4;
-            // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(58)))), ((int)(((byte)(58)))));
-            this.ClientSize = new System.Drawing.Size(1600, 900);
+            this.ClientSize = new System.Drawing.Size(1600, 788);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

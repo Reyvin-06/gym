@@ -16,7 +16,7 @@ namespace Gym
         {
             InitializeComponent();
         }
-        SqlConnection cn = new SqlConnection("Data Source=DESKTOP-0EN1J76;Initial Catalog=gym;Integrated Security=True");
+        SqlConnection cn = new SqlConnection("Data Source=DESKTOP-C3FL76N;Initial Catalog=gym;Integrated Security=True");
         //Data Source=DESKTOP-0EN1J76;Initial Catalog=gym;Integrated Security=True
 
 
