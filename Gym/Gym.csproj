@@ -99,6 +99,37 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>gymDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="gymDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gymDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="gymDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gymDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="gymDataSet41.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gymDataSet41.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="gymDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gymDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="gymDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gymDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Inactivos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inactivos.Designer.cs">
+      <DependentUpon>Inactivos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,6 +161,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inactivos.resx">
+      <DependentUpon>Inactivos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -169,6 +203,61 @@
     <None Include="gymDataSet1.xss">
       <DependentUpon>gymDataSet1.xsd</DependentUpon>
     </None>
+    <None Include="gymDataSet2.xsc">
+      <DependentUpon>gymDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="gymDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>gymDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gymDataSet2.xss">
+      <DependentUpon>gymDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="gymDataSet3.xsc">
+      <DependentUpon>gymDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="gymDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>gymDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gymDataSet3.xss">
+      <DependentUpon>gymDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="gymDataSet41.xsc">
+      <DependentUpon>gymDataSet41.xsd</DependentUpon>
+    </None>
+    <None Include="gymDataSet41.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>gymDataSet41.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gymDataSet41.xss">
+      <DependentUpon>gymDataSet41.xsd</DependentUpon>
+    </None>
+    <None Include="gymDataSet5.xsc">
+      <DependentUpon>gymDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="gymDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>gymDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gymDataSet5.xss">
+      <DependentUpon>gymDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="gymDataSet6.xsc">
+      <DependentUpon>gymDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="gymDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>gymDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gymDataSet6.xss">
+      <DependentUpon>gymDataSet6.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -184,6 +273,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\javier-santos-guzman-9MR78HGoflw-unsplash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brett-jordan-U2q73PfHFpM-unsplash.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

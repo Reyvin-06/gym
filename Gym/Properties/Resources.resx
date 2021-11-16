@@ -121,6 +121,9 @@
   <data name="home_house_icon-icons.com_49851" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\home_house_icon-icons.com_49851.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="javier-santos-guzman-9MR78HGoflw-unsplash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\javier-santos-guzman-9MR78HGoflw-unsplash.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="1455554322_line-47_icon-icons.com_53325" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1455554322_line-47_icon-icons.com_53325.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -136,7 +139,7 @@
   <data name="calendar-check_icon-icons.com_56836" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\calendar-check_icon-icons.com_56836.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="javier-santos-guzman-9MR78HGoflw-unsplash" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\javier-santos-guzman-9MR78HGoflw-unsplash.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="brett-jordan-U2q73PfHFpM-unsplash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\brett-jordan-U2q73PfHFpM-unsplash.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

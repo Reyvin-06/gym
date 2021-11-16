@@ -36,3 +36,4 @@ C:\Users\Pedro Almada\Source\Repos\gym\Gym\obj\Debug\Gym.csproj.CoreCompileInput
 C:\Users\Pedro Almada\Source\Repos\gym\Gym\obj\Debug\Gym.csproj.CopyComplete
 C:\Users\Pedro Almada\Source\Repos\gym\Gym\obj\Debug\Gym.exe
 C:\Users\Pedro Almada\Source\Repos\gym\Gym\obj\Debug\Gym.pdb
+C:\Users\Reyvin Camacho\Source\Repos\gym\Gym\obj\Debug\Gym.Inactivos.resources

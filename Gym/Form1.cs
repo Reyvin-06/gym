@@ -46,12 +46,12 @@ namespace Gym
 
         private void guna2Button4_Click(object sender, EventArgs e)
         {
-            cu_Asistencia1.BringToFront();
+            //cu_Asistencia1.BringToFront();
         }
 
         private void btn_registros_Click(object sender, EventArgs e)
         {
-            cu_registros1.BringToFront();
+            //cu_registros1.BringToFront();
         }
 
         private void btn_pagos_Click(object sender, EventArgs e)
@@ -67,6 +67,11 @@ namespace Gym
         private void guna2ControlBox1_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void clientes1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -83,6 +83,16 @@ namespace Gym.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap brett_jordan_U2q73PfHFpM_unsplash {
+            get {
+                object obj = ResourceManager.GetObject("brett-jordan-U2q73PfHFpM-unsplash", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap calendar_check_icon_icons_com_56836 {
             get {
                 object obj = ResourceManager.GetObject("calendar-check_icon-icons.com_56836", resourceCulture);

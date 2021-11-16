@@ -16,18 +16,21 @@ namespace Gym
         {
             InitializeComponent();
         }
-        SqlConnection cn = new SqlConnection("Data Source=DESKTOP-C3FL76N;Initial Catalog=gym;Integrated Security=True");
+        SqlConnection cn = new SqlConnection("Data Source=DESKTOP-0EN1J76;Initial Catalog=gym;Integrated Security=True");
         //Data Source=DESKTOP-0EN1J76;Initial Catalog=gym;Integrated Security=True
 
 
         private void Clientes_Load(object sender, EventArgs e)
         {
-            SqlCommand cmd = new SqlCommand("Select * from clientes", cn);
+            SqlCommand cmd = new SqlCommand("Select * from clientes where estado = 'Activo'", cn);
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
             da.Fill(dt);
             dgv_clientes.DataSource = dt;
             cn.Close();
+
+            int clientes =  dgv_clientes.RowCount;
+            lb_personasregistradas.Text = clientes.ToString();
         }
 
         private void guna2GradientButton1_Click(object sender, EventArgs e)
@@ -39,16 +42,15 @@ namespace Gym
                 SqlCommand cmd = cn.CreateCommand();
                 SqlCommand cmc = cn.CreateCommand();
 
+
                 cmc.CommandType = CommandType.Text;
-                cmc.CommandText = "INSERT INTO clientes(id_cliente,nombre,edad,celular,correo) VALUES (" +
-                Convert.ToInt32(txtid.Text) + ",'" + txtnombre.Text + "','" + txtedad.Text + "','" + txtcelular.Text + "','" + txtcorreo.Text + "')";
+                cmc.CommandText = "INSERT INTO clientes(nombre,edad,celular,correo,estado) VALUES ('" + txtnombre.Text + "','" + txtedad.Text + "','" + txtcelular.Text + "','" + txtcorreo.Text + "','" + "Activo" + "')";
 
                 int filasafectadas = cmc.ExecuteNonQuery();
 
                 if (filasafectadas > 0)
                 {
                     MessageBox.Show("se agrego");
-                    txtid.Text = "";
                     txtcorreo.Text = "";
                     txtnombre.Text = "";
                     txtedad.Text = "";
@@ -60,7 +62,43 @@ namespace Gym
                 }
 
                 cmd.CommandType = CommandType.Text;
-                cmd.CommandText = "SELECT * FROM clientes";
+                cmd.CommandText = "Select * from clientes where estado = 'Activo'";
+                cmd.ExecuteNonQuery();
+
+                DataTable dt = new DataTable();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+
+                da.Fill(dt);
+
+                dgv_clientes.DataSource = dt;
+
+                cn.Close();
+
+                int clientes = dgv_clientes.RowCount;
+                lb_personasregistradas.Text = clientes.ToString();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void btn_inactivos_Click(object sender, EventArgs e)
+        {
+            Inactivos inactivos = new Inactivos();
+            inactivos.Show();
+        }
+
+        private void txt_busqueda_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                cn.Open();
+
+                SqlCommand cmd = cn.CreateCommand();
+
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "SELECT * FROM Clientes WHERE estado = 'Activo' AND nombre LIKE('" + txt_busqueda.Text + "%')";
                 cmd.ExecuteNonQuery();
 
                 DataTable dt = new DataTable();
@@ -76,6 +114,11 @@ namespace Gym
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void lb_personasregistradas_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

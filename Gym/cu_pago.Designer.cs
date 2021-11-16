@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.label6 = new System.Windows.Forms.Label();
@@ -42,33 +42,41 @@
             this.label1 = new System.Windows.Forms.Label();
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.lb_pagar = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.txt_pagar = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.label8 = new System.Windows.Forms.Label();
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2GradientPanel3 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.label7 = new System.Windows.Forms.Label();
-            this.txt_cambio = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
+            this.cbx_clientes = new Guna.UI2.WinForms.Guna2ComboBox();
             this.nm_meses = new Guna.UI2.WinForms.Guna2NumericUpDown();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.txt_nombrecliente = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Elipse5 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.dgv_clientes = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.registropagoBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.gymDataSet2 = new Gym.gymDataSet2();
+            this.registropagoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.gymDataSet1 = new Gym.gymDataSet1();
+            this.Bton_confirmar = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.registro_pagoTableAdapter = new Gym.gymDataSet1TableAdapters.registro_pagoTableAdapter();
+            this.registro_pagoTableAdapter1 = new Gym.gymDataSet2TableAdapters.registro_pagoTableAdapter();
+            this.dgv_pagos = new Guna.UI2.WinForms.Guna2DataGridView();
             this.nombreclienteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descripcionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cantidadDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fechaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fecharenovacionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.registropagoBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.gymDataSet1 = new Gym.gymDataSet1();
-            this.Bton_confirmar = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.registro_pagoTableAdapter = new Gym.gymDataSet1TableAdapters.registro_pagoTableAdapter();
+            this.registropagoBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.gymDataSet6 = new Gym.gymDataSet6();
+            this.registro_pagoTableAdapter2 = new Gym.gymDataSet6TableAdapters.registro_pagoTableAdapter();
+            this.lb_cambio = new System.Windows.Forms.Label();
+            this.Fecha = new System.Windows.Forms.Label();
+            this.Hora = new System.Windows.Forms.Label();
             this.guna2GradientPanel1.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             this.guna2GradientPanel2.SuspendLayout();
@@ -77,9 +85,13 @@
             this.guna2Panel3.SuspendLayout();
             this.guna2Panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nm_meses)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_clientes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.registropagoBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gymDataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.registropagoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gymDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_pagos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.registropagoBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gymDataSet6)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Elipse1
@@ -144,6 +156,7 @@
             this.txt_pago.Size = new System.Drawing.Size(200, 73);
             this.txt_pago.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txt_pago.TabIndex = 7;
+            this.txt_pago.TextChanged += new System.EventHandler(this.txt_pago_TextChanged);
             // 
             // guna2Panel1
             // 
@@ -175,8 +188,8 @@
             // 
             // guna2GradientPanel2
             // 
+            this.guna2GradientPanel2.Controls.Add(this.lb_pagar);
             this.guna2GradientPanel2.Controls.Add(this.label5);
-            this.guna2GradientPanel2.Controls.Add(this.txt_pagar);
             this.guna2GradientPanel2.Controls.Add(this.guna2Panel2);
             this.guna2GradientPanel2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(42)))), ((int)(((byte)(42)))));
             this.guna2GradientPanel2.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(42)))), ((int)(((byte)(42)))));
@@ -185,6 +198,19 @@
             this.guna2GradientPanel2.ShadowDecoration.Parent = this.guna2GradientPanel2;
             this.guna2GradientPanel2.Size = new System.Drawing.Size(250, 181);
             this.guna2GradientPanel2.TabIndex = 6;
+            this.guna2GradientPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2GradientPanel2_Paint);
+            // 
+            // lb_pagar
+            // 
+            this.lb_pagar.AutoSize = true;
+            this.lb_pagar.BackColor = System.Drawing.Color.Transparent;
+            this.lb_pagar.Font = new System.Drawing.Font("Lucida Console", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_pagar.ForeColor = System.Drawing.Color.White;
+            this.lb_pagar.Location = new System.Drawing.Point(58, 87);
+            this.lb_pagar.Name = "lb_pagar";
+            this.lb_pagar.Size = new System.Drawing.Size(0, 48);
+            this.lb_pagar.TabIndex = 8;
+            this.lb_pagar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label5
             // 
@@ -198,39 +224,6 @@
             this.label5.TabIndex = 7;
             this.label5.Text = "$";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // txt_pagar
-            // 
-            this.txt_pagar.Animated = true;
-            this.txt_pagar.BackColor = System.Drawing.Color.Transparent;
-            this.txt_pagar.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(42)))), ((int)(((byte)(42)))));
-            this.txt_pagar.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_pagar.DefaultText = "";
-            this.txt_pagar.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txt_pagar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txt_pagar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_pagar.DisabledState.Parent = this.txt_pagar;
-            this.txt_pagar.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_pagar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(42)))), ((int)(((byte)(42)))));
-            this.txt_pagar.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(75)))), ((int)(((byte)(10)))));
-            this.txt_pagar.FocusedState.Parent = this.txt_pagar;
-            this.txt_pagar.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_pagar.ForeColor = System.Drawing.Color.White;
-            this.txt_pagar.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(75)))), ((int)(((byte)(10)))));
-            this.txt_pagar.HoverState.Parent = this.txt_pagar;
-            this.txt_pagar.Location = new System.Drawing.Point(44, 71);
-            this.txt_pagar.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
-            this.txt_pagar.Name = "txt_pagar";
-            this.txt_pagar.PasswordChar = '\0';
-            this.txt_pagar.PlaceholderForeColor = System.Drawing.Color.White;
-            this.txt_pagar.PlaceholderText = "";
-            this.txt_pagar.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txt_pagar.SelectedText = "";
-            this.txt_pagar.ShadowDecoration.Parent = this.txt_pagar;
-            this.txt_pagar.Size = new System.Drawing.Size(200, 73);
-            this.txt_pagar.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.txt_pagar.TabIndex = 7;
-            this.txt_pagar.TextChanged += new System.EventHandler(this.txt_pagar_TextChanged);
             // 
             // guna2Panel2
             // 
@@ -262,8 +255,8 @@
             // 
             // guna2GradientPanel3
             // 
+            this.guna2GradientPanel3.Controls.Add(this.lb_cambio);
             this.guna2GradientPanel3.Controls.Add(this.label7);
-            this.guna2GradientPanel3.Controls.Add(this.txt_cambio);
             this.guna2GradientPanel3.Controls.Add(this.guna2Panel3);
             this.guna2GradientPanel3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(42)))), ((int)(((byte)(42)))));
             this.guna2GradientPanel3.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(42)))), ((int)(((byte)(42)))));
@@ -285,38 +278,6 @@
             this.label7.TabIndex = 9;
             this.label7.Text = "$";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // txt_cambio
-            // 
-            this.txt_cambio.Animated = true;
-            this.txt_cambio.BackColor = System.Drawing.Color.Transparent;
-            this.txt_cambio.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(42)))), ((int)(((byte)(42)))));
-            this.txt_cambio.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_cambio.DefaultText = "";
-            this.txt_cambio.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txt_cambio.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txt_cambio.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_cambio.DisabledState.Parent = this.txt_cambio;
-            this.txt_cambio.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_cambio.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(42)))), ((int)(((byte)(42)))));
-            this.txt_cambio.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(75)))), ((int)(((byte)(10)))));
-            this.txt_cambio.FocusedState.Parent = this.txt_cambio;
-            this.txt_cambio.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_cambio.ForeColor = System.Drawing.Color.White;
-            this.txt_cambio.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(75)))), ((int)(((byte)(10)))));
-            this.txt_cambio.HoverState.Parent = this.txt_cambio;
-            this.txt_cambio.Location = new System.Drawing.Point(44, 67);
-            this.txt_cambio.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
-            this.txt_cambio.Name = "txt_cambio";
-            this.txt_cambio.PasswordChar = '\0';
-            this.txt_cambio.PlaceholderForeColor = System.Drawing.Color.White;
-            this.txt_cambio.PlaceholderText = "";
-            this.txt_cambio.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txt_cambio.SelectedText = "";
-            this.txt_cambio.ShadowDecoration.Parent = this.txt_cambio;
-            this.txt_cambio.Size = new System.Drawing.Size(200, 73);
-            this.txt_cambio.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.txt_cambio.TabIndex = 7;
             // 
             // guna2Panel3
             // 
@@ -349,15 +310,35 @@
             // guna2Panel4
             // 
             this.guna2Panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(42)))), ((int)(((byte)(42)))));
+            this.guna2Panel4.Controls.Add(this.cbx_clientes);
             this.guna2Panel4.Controls.Add(this.nm_meses);
             this.guna2Panel4.Controls.Add(this.label3);
             this.guna2Panel4.Controls.Add(this.label4);
-            this.guna2Panel4.Controls.Add(this.txt_nombrecliente);
             this.guna2Panel4.Location = new System.Drawing.Point(12, 9);
             this.guna2Panel4.Name = "guna2Panel4";
             this.guna2Panel4.ShadowDecoration.Parent = this.guna2Panel4;
             this.guna2Panel4.Size = new System.Drawing.Size(427, 181);
             this.guna2Panel4.TabIndex = 10;
+            // 
+            // cbx_clientes
+            // 
+            this.cbx_clientes.BackColor = System.Drawing.Color.Transparent;
+            this.cbx_clientes.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbx_clientes.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbx_clientes.FocusedColor = System.Drawing.Color.Empty;
+            this.cbx_clientes.FocusedState.Parent = this.cbx_clientes;
+            this.cbx_clientes.Font = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbx_clientes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cbx_clientes.FormattingEnabled = true;
+            this.cbx_clientes.HoverState.Parent = this.cbx_clientes;
+            this.cbx_clientes.ItemHeight = 30;
+            this.cbx_clientes.ItemsAppearance.Parent = this.cbx_clientes;
+            this.cbx_clientes.Location = new System.Drawing.Point(150, 49);
+            this.cbx_clientes.Name = "cbx_clientes";
+            this.cbx_clientes.ShadowDecoration.Parent = this.cbx_clientes;
+            this.cbx_clientes.Size = new System.Drawing.Size(256, 36);
+            this.cbx_clientes.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            this.cbx_clientes.TabIndex = 14;
             // 
             // nm_meses
             // 
@@ -381,11 +362,7 @@
             this.nm_meses.Size = new System.Drawing.Size(112, 38);
             this.nm_meses.TabIndex = 13;
             this.nm_meses.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(75)))), ((int)(((byte)(10)))));
-            this.nm_meses.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
+            this.nm_meses.ValueChanged += new System.EventHandler(this.nm_meses_ValueChanged);
             // 
             // label3
             // 
@@ -409,153 +386,19 @@
             this.label4.TabIndex = 10;
             this.label4.Text = "Nombre:";
             // 
-            // txt_nombrecliente
-            // 
-            this.txt_nombrecliente.Animated = true;
-            this.txt_nombrecliente.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_nombrecliente.DefaultText = "";
-            this.txt_nombrecliente.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txt_nombrecliente.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txt_nombrecliente.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_nombrecliente.DisabledState.Parent = this.txt_nombrecliente;
-            this.txt_nombrecliente.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_nombrecliente.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(75)))), ((int)(((byte)(10)))));
-            this.txt_nombrecliente.FocusedState.Parent = this.txt_nombrecliente;
-            this.txt_nombrecliente.Font = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_nombrecliente.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(75)))), ((int)(((byte)(10)))));
-            this.txt_nombrecliente.HoverState.Parent = this.txt_nombrecliente;
-            this.txt_nombrecliente.Location = new System.Drawing.Point(150, 45);
-            this.txt_nombrecliente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txt_nombrecliente.Name = "txt_nombrecliente";
-            this.txt_nombrecliente.PasswordChar = '\0';
-            this.txt_nombrecliente.PlaceholderText = "";
-            this.txt_nombrecliente.SelectedText = "";
-            this.txt_nombrecliente.ShadowDecoration.Parent = this.txt_nombrecliente;
-            this.txt_nombrecliente.Size = new System.Drawing.Size(225, 36);
-            this.txt_nombrecliente.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.txt_nombrecliente.TabIndex = 9;
-            this.txt_nombrecliente.TextChanged += new System.EventHandler(this.txt_nombrecliente_TextChanged);
-            // 
             // guna2Elipse5
             // 
             this.guna2Elipse5.BorderRadius = 30;
             // 
-            // dgv_clientes
+            // registropagoBindingSource1
             // 
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(58)))), ((int)(((byte)(58)))));
-            this.dgv_clientes.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
-            this.dgv_clientes.AutoGenerateColumns = false;
-            this.dgv_clientes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgv_clientes.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(42)))), ((int)(((byte)(42)))));
-            this.dgv_clientes.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgv_clientes.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dgv_clientes.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(42)))), ((int)(((byte)(42)))));
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.Padding = new System.Windows.Forms.Padding(5);
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(75)))), ((int)(((byte)(10)))));
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_clientes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
-            this.dgv_clientes.ColumnHeadersHeight = 29;
-            this.dgv_clientes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.nombreclienteDataGridViewTextBoxColumn,
-            this.descripcionDataGridViewTextBoxColumn,
-            this.cantidadDataGridViewTextBoxColumn,
-            this.fechaDataGridViewTextBoxColumn,
-            this.fecharenovacionDataGridViewTextBoxColumn});
-            this.dgv_clientes.DataSource = this.registropagoBindingSource;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(42)))), ((int)(((byte)(42)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(75)))), ((int)(((byte)(10)))));
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_clientes.DefaultCellStyle = dataGridViewCellStyle8;
-            this.dgv_clientes.EnableHeadersVisualStyles = false;
-            this.dgv_clientes.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(75)))), ((int)(((byte)(10)))));
-            this.dgv_clientes.Location = new System.Drawing.Point(12, 263);
-            this.dgv_clientes.Name = "dgv_clientes";
-            this.dgv_clientes.ReadOnly = true;
-            this.dgv_clientes.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(42)))), ((int)(((byte)(42)))));
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Lucida Console", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(75)))), ((int)(((byte)(10)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_clientes.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
-            this.dgv_clientes.RowHeadersVisible = false;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(42)))), ((int)(((byte)(42)))));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(75)))), ((int)(((byte)(10)))));
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.White;
-            this.dgv_clientes.RowsDefaultCellStyle = dataGridViewCellStyle10;
-            this.dgv_clientes.RowTemplate.ReadOnly = true;
-            this.dgv_clientes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_clientes.Size = new System.Drawing.Size(1286, 533);
-            this.dgv_clientes.TabIndex = 11;
-            this.dgv_clientes.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Light;
-            this.dgv_clientes.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(58)))), ((int)(((byte)(58)))));
-            this.dgv_clientes.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.dgv_clientes.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.dgv_clientes.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.dgv_clientes.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.dgv_clientes.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(42)))), ((int)(((byte)(42)))));
-            this.dgv_clientes.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(75)))), ((int)(((byte)(10)))));
-            this.dgv_clientes.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(42)))), ((int)(((byte)(42)))));
-            this.dgv_clientes.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            this.dgv_clientes.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.dgv_clientes.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.dgv_clientes.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.dgv_clientes.ThemeStyle.HeaderStyle.Height = 29;
-            this.dgv_clientes.ThemeStyle.ReadOnly = true;
-            this.dgv_clientes.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(42)))), ((int)(((byte)(42)))));
-            this.dgv_clientes.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dgv_clientes.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.dgv_clientes.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.White;
-            this.dgv_clientes.ThemeStyle.RowsStyle.Height = 22;
-            this.dgv_clientes.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(75)))), ((int)(((byte)(10)))));
-            this.dgv_clientes.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.registropagoBindingSource1.DataMember = "registro_pago";
+            this.registropagoBindingSource1.DataSource = this.gymDataSet2;
             // 
-            // nombreclienteDataGridViewTextBoxColumn
+            // gymDataSet2
             // 
-            this.nombreclienteDataGridViewTextBoxColumn.DataPropertyName = "nombre_cliente";
-            this.nombreclienteDataGridViewTextBoxColumn.HeaderText = "nombre_cliente";
-            this.nombreclienteDataGridViewTextBoxColumn.Name = "nombreclienteDataGridViewTextBoxColumn";
-            this.nombreclienteDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // descripcionDataGridViewTextBoxColumn
-            // 
-            this.descripcionDataGridViewTextBoxColumn.DataPropertyName = "descripcion";
-            this.descripcionDataGridViewTextBoxColumn.HeaderText = "descripcion";
-            this.descripcionDataGridViewTextBoxColumn.Name = "descripcionDataGridViewTextBoxColumn";
-            this.descripcionDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // cantidadDataGridViewTextBoxColumn
-            // 
-            this.cantidadDataGridViewTextBoxColumn.DataPropertyName = "cantidad";
-            this.cantidadDataGridViewTextBoxColumn.HeaderText = "cantidad";
-            this.cantidadDataGridViewTextBoxColumn.Name = "cantidadDataGridViewTextBoxColumn";
-            this.cantidadDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // fechaDataGridViewTextBoxColumn
-            // 
-            this.fechaDataGridViewTextBoxColumn.DataPropertyName = "fecha";
-            this.fechaDataGridViewTextBoxColumn.HeaderText = "fecha";
-            this.fechaDataGridViewTextBoxColumn.Name = "fechaDataGridViewTextBoxColumn";
-            this.fechaDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // fecharenovacionDataGridViewTextBoxColumn
-            // 
-            this.fecharenovacionDataGridViewTextBoxColumn.DataPropertyName = "fecha_renovacion";
-            this.fecharenovacionDataGridViewTextBoxColumn.HeaderText = "fecha_renovacion";
-            this.fecharenovacionDataGridViewTextBoxColumn.Name = "fecharenovacionDataGridViewTextBoxColumn";
-            this.fecharenovacionDataGridViewTextBoxColumn.ReadOnly = true;
+            this.gymDataSet2.DataSetName = "gymDataSet2";
+            this.gymDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // registropagoBindingSource
             // 
@@ -578,7 +421,7 @@
             this.Bton_confirmar.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.Bton_confirmar.ForeColor = System.Drawing.Color.White;
             this.Bton_confirmar.HoverState.Parent = this.Bton_confirmar;
-            this.Bton_confirmar.Location = new System.Drawing.Point(102, 196);
+            this.Bton_confirmar.Location = new System.Drawing.Point(259, 196);
             this.Bton_confirmar.Name = "Bton_confirmar";
             this.Bton_confirmar.ShadowDecoration.Parent = this.Bton_confirmar;
             this.Bton_confirmar.Size = new System.Drawing.Size(180, 45);
@@ -590,19 +433,193 @@
             // 
             this.registro_pagoTableAdapter.ClearBeforeFill = true;
             // 
+            // registro_pagoTableAdapter1
+            // 
+            this.registro_pagoTableAdapter1.ClearBeforeFill = true;
+            // 
+            // dgv_pagos
+            // 
+            this.dgv_pagos.AllowUserToAddRows = false;
+            this.dgv_pagos.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(58)))), ((int)(((byte)(58)))));
+            this.dgv_pagos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle11;
+            this.dgv_pagos.AutoGenerateColumns = false;
+            this.dgv_pagos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv_pagos.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(42)))), ((int)(((byte)(42)))));
+            this.dgv_pagos.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgv_pagos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgv_pagos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(42)))), ((int)(((byte)(42)))));
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle12.Padding = new System.Windows.Forms.Padding(5);
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(75)))), ((int)(((byte)(10)))));
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_pagos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            this.dgv_pagos.ColumnHeadersHeight = 29;
+            this.dgv_pagos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.nombreclienteDataGridViewTextBoxColumn,
+            this.descripcionDataGridViewTextBoxColumn,
+            this.cantidadDataGridViewTextBoxColumn,
+            this.fechaDataGridViewTextBoxColumn,
+            this.fecharenovacionDataGridViewTextBoxColumn});
+            this.dgv_pagos.DataSource = this.registropagoBindingSource2;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(42)))), ((int)(((byte)(42)))));
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(75)))), ((int)(((byte)(10)))));
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_pagos.DefaultCellStyle = dataGridViewCellStyle13;
+            this.dgv_pagos.EnableHeadersVisualStyles = false;
+            this.dgv_pagos.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(75)))), ((int)(((byte)(10)))));
+            this.dgv_pagos.Location = new System.Drawing.Point(3, 247);
+            this.dgv_pagos.Name = "dgv_pagos";
+            this.dgv_pagos.ReadOnly = true;
+            this.dgv_pagos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(42)))), ((int)(((byte)(42)))));
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Lucida Console", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(75)))), ((int)(((byte)(10)))));
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_pagos.RowHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            this.dgv_pagos.RowHeadersVisible = false;
+            dataGridViewCellStyle15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(42)))), ((int)(((byte)(42)))));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(75)))), ((int)(((byte)(10)))));
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.White;
+            this.dgv_pagos.RowsDefaultCellStyle = dataGridViewCellStyle15;
+            this.dgv_pagos.RowTemplate.ReadOnly = true;
+            this.dgv_pagos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgv_pagos.Size = new System.Drawing.Size(1295, 448);
+            this.dgv_pagos.TabIndex = 18;
+            this.dgv_pagos.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Light;
+            this.dgv_pagos.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(58)))), ((int)(((byte)(58)))));
+            this.dgv_pagos.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.dgv_pagos.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.dgv_pagos.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.dgv_pagos.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.dgv_pagos.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(42)))), ((int)(((byte)(42)))));
+            this.dgv_pagos.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(75)))), ((int)(((byte)(10)))));
+            this.dgv_pagos.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(42)))), ((int)(((byte)(42)))));
+            this.dgv_pagos.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.dgv_pagos.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.dgv_pagos.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.dgv_pagos.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.dgv_pagos.ThemeStyle.HeaderStyle.Height = 29;
+            this.dgv_pagos.ThemeStyle.ReadOnly = true;
+            this.dgv_pagos.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(42)))), ((int)(((byte)(42)))));
+            this.dgv_pagos.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgv_pagos.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.dgv_pagos.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.White;
+            this.dgv_pagos.ThemeStyle.RowsStyle.Height = 22;
+            this.dgv_pagos.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(75)))), ((int)(((byte)(10)))));
+            this.dgv_pagos.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.White;
+            // 
+            // nombreclienteDataGridViewTextBoxColumn
+            // 
+            this.nombreclienteDataGridViewTextBoxColumn.DataPropertyName = "nombre_cliente";
+            this.nombreclienteDataGridViewTextBoxColumn.HeaderText = "Cliente";
+            this.nombreclienteDataGridViewTextBoxColumn.Name = "nombreclienteDataGridViewTextBoxColumn";
+            this.nombreclienteDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // descripcionDataGridViewTextBoxColumn
+            // 
+            this.descripcionDataGridViewTextBoxColumn.DataPropertyName = "descripcion";
+            this.descripcionDataGridViewTextBoxColumn.HeaderText = "Descripción";
+            this.descripcionDataGridViewTextBoxColumn.Name = "descripcionDataGridViewTextBoxColumn";
+            this.descripcionDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // cantidadDataGridViewTextBoxColumn
+            // 
+            this.cantidadDataGridViewTextBoxColumn.DataPropertyName = "cantidad";
+            this.cantidadDataGridViewTextBoxColumn.HeaderText = "Cantidad";
+            this.cantidadDataGridViewTextBoxColumn.Name = "cantidadDataGridViewTextBoxColumn";
+            this.cantidadDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // fechaDataGridViewTextBoxColumn
+            // 
+            this.fechaDataGridViewTextBoxColumn.DataPropertyName = "fecha";
+            this.fechaDataGridViewTextBoxColumn.HeaderText = "Fecha de Incio";
+            this.fechaDataGridViewTextBoxColumn.Name = "fechaDataGridViewTextBoxColumn";
+            this.fechaDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // fecharenovacionDataGridViewTextBoxColumn
+            // 
+            this.fecharenovacionDataGridViewTextBoxColumn.DataPropertyName = "fecha_renovacion";
+            this.fecharenovacionDataGridViewTextBoxColumn.HeaderText = "Fecha de Renovación";
+            this.fecharenovacionDataGridViewTextBoxColumn.Name = "fecharenovacionDataGridViewTextBoxColumn";
+            this.fecharenovacionDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // registropagoBindingSource2
+            // 
+            this.registropagoBindingSource2.DataMember = "registro_pago";
+            this.registropagoBindingSource2.DataSource = this.gymDataSet6;
+            // 
+            // gymDataSet6
+            // 
+            this.gymDataSet6.DataSetName = "gymDataSet6";
+            this.gymDataSet6.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // registro_pagoTableAdapter2
+            // 
+            this.registro_pagoTableAdapter2.ClearBeforeFill = true;
+            // 
+            // lb_cambio
+            // 
+            this.lb_cambio.AutoSize = true;
+            this.lb_cambio.BackColor = System.Drawing.Color.Transparent;
+            this.lb_cambio.Font = new System.Drawing.Font("Lucida Console", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_cambio.ForeColor = System.Drawing.Color.White;
+            this.lb_cambio.Location = new System.Drawing.Point(58, 87);
+            this.lb_cambio.Name = "lb_cambio";
+            this.lb_cambio.Size = new System.Drawing.Size(0, 48);
+            this.lb_cambio.TabIndex = 10;
+            this.lb_cambio.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Fecha
+            // 
+            this.Fecha.AutoSize = true;
+            this.Fecha.Font = new System.Drawing.Font("Lucida Console", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Fecha.Location = new System.Drawing.Point(1173, 640);
+            this.Fecha.Name = "Fecha";
+            this.Fecha.Size = new System.Drawing.Size(80, 24);
+            this.Fecha.TabIndex = 20;
+            this.Fecha.Text = "Fecha";
+            this.Fecha.Visible = false;
+            // 
+            // Hora
+            // 
+            this.Hora.AutoSize = true;
+            this.Hora.Font = new System.Drawing.Font("Lucida Console", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Hora.Location = new System.Drawing.Point(1101, 640);
+            this.Hora.Name = "Hora";
+            this.Hora.Size = new System.Drawing.Size(66, 24);
+            this.Hora.TabIndex = 19;
+            this.Hora.Text = "Hora";
+            this.Hora.Visible = false;
+            // 
             // cu_pago
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(58)))), ((int)(((byte)(58)))));
+            this.Controls.Add(this.dgv_pagos);
             this.Controls.Add(this.Bton_confirmar);
-            this.Controls.Add(this.dgv_clientes);
             this.Controls.Add(this.guna2Panel4);
             this.Controls.Add(this.guna2GradientPanel3);
             this.Controls.Add(this.guna2GradientPanel1);
             this.Controls.Add(this.guna2GradientPanel2);
+            this.Controls.Add(this.Fecha);
+            this.Controls.Add(this.Hora);
             this.Name = "cu_pago";
-            this.Size = new System.Drawing.Size(1280, 750);
+            this.Size = new System.Drawing.Size(1324, 707);
+            this.Load += new System.EventHandler(this.cu_pago_Load);
             this.guna2GradientPanel1.ResumeLayout(false);
             this.guna2GradientPanel1.PerformLayout();
             this.guna2Panel1.ResumeLayout(false);
@@ -618,10 +635,15 @@
             this.guna2Panel4.ResumeLayout(false);
             this.guna2Panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nm_meses)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_clientes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.registropagoBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gymDataSet2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.registropagoBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gymDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_pagos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.registropagoBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gymDataSet6)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -632,7 +654,6 @@
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse4;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse5;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel2;
-        private Guna.UI2.WinForms.Guna2TextBox txt_pagar;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private System.Windows.Forms.Label label8;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
@@ -640,26 +661,35 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel3;
-        private Guna.UI2.WinForms.Guna2TextBox txt_cambio;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private Guna.UI2.WinForms.Guna2TextBox txt_nombrecliente;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private Guna.UI2.WinForms.Guna2DataGridView dgv_clientes;
         private Guna.UI2.WinForms.Guna2NumericUpDown nm_meses;
+        private System.Windows.Forms.BindingSource registropagoBindingSource;
+        private gymDataSet1 gymDataSet1;
+        private Guna.UI2.WinForms.Guna2GradientButton Bton_confirmar;
+        private gymDataSet1TableAdapters.registro_pagoTableAdapter registro_pagoTableAdapter;
+        private System.Windows.Forms.BindingSource registropagoBindingSource1;
+        private gymDataSet2 gymDataSet2;
+        private gymDataSet2TableAdapters.registro_pagoTableAdapter registro_pagoTableAdapter1;
+        private Guna.UI2.WinForms.Guna2DataGridView dgv_pagos;
         private System.Windows.Forms.DataGridViewTextBoxColumn nombreclienteDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn descripcionDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn cantidadDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn fechaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn fecharenovacionDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource registropagoBindingSource;
-        private gymDataSet1 gymDataSet1;
-        private Guna.UI2.WinForms.Guna2GradientButton Bton_confirmar;
-        private gymDataSet1TableAdapters.registro_pagoTableAdapter registro_pagoTableAdapter;
+        private System.Windows.Forms.BindingSource registropagoBindingSource2;
+        private gymDataSet6 gymDataSet6;
+        private gymDataSet6TableAdapters.registro_pagoTableAdapter registro_pagoTableAdapter2;
+        private Guna.UI2.WinForms.Guna2ComboBox cbx_clientes;
+        private System.Windows.Forms.Label lb_pagar;
+        private System.Windows.Forms.Label lb_cambio;
+        private System.Windows.Forms.Label Fecha;
+        private System.Windows.Forms.Label Hora;
     }
 }

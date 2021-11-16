@@ -478,7 +478,7 @@
             this.guna2Panel5.Location = new System.Drawing.Point(662, 48);
             this.guna2Panel5.Name = "guna2Panel5";
             this.guna2Panel5.ShadowDecoration.Parent = this.guna2Panel5;
-            this.guna2Panel5.Size = new System.Drawing.Size(534, 740);
+            this.guna2Panel5.Size = new System.Drawing.Size(534, 581);
             this.guna2Panel5.TabIndex = 6;
             // 
             // guna2Panel6
@@ -505,7 +505,7 @@
             this.Controls.Add(this.guna2Panel3);
             this.Controls.Add(this.guna2Panel1);
             this.Name = "cu_inicio";
-            this.Size = new System.Drawing.Size(1324, 811);
+            this.Size = new System.Drawing.Size(1324, 707);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             this.guna2Panel2.ResumeLayout(false);
