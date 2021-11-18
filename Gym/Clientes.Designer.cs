@@ -29,17 +29,17 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txt_busqueda = new Guna.UI2.WinForms.Guna2TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.clientesBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
@@ -69,15 +69,16 @@
             this.btn_inactivos = new Guna.UI2.WinForms.Guna2GradientButton();
             this.clientesTableAdapter1 = new Gym.gymDataSet3TableAdapters.clientesTableAdapter();
             this.dgv_clientes = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.gymDataSet4 = new Gym.gymDataSet4();
-            this.clientesBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.clientesTableAdapter2 = new Gym.gymDataSet4TableAdapters.clientesTableAdapter();
             this.idclienteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.edadDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.celularDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.correoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.estadoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clientesBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.gymDataSet4 = new Gym.gymDataSet4();
+            this.clientesTableAdapter2 = new Gym.gymDataSet4TableAdapters.clientesTableAdapter();
+            this.btn_actualizar = new Guna.UI2.WinForms.Guna2GradientButton();
             ((System.ComponentModel.ISupportInitialize)(this.clientesBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gymDataSet3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientesBindingSource)).BeginInit();
@@ -87,8 +88,8 @@
             this.guna2GradientPanel2.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_clientes)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gymDataSet4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientesBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gymDataSet4)).BeginInit();
             this.SuspendLayout();
             // 
             // txt_busqueda
@@ -257,6 +258,7 @@
             this.txtcelular.Size = new System.Drawing.Size(200, 36);
             this.txtcelular.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtcelular.TabIndex = 10;
+            this.txtcelular.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtcelular_KeyPress);
             // 
             // txtedad
             // 
@@ -282,6 +284,7 @@
             this.txtedad.Size = new System.Drawing.Size(200, 36);
             this.txtedad.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtedad.TabIndex = 9;
+            this.txtedad.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtedad_KeyPress);
             // 
             // label6
             // 
@@ -449,23 +452,23 @@
             // 
             // dgv_clientes
             // 
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(58)))), ((int)(((byte)(58)))));
-            this.dgv_clientes.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(58)))), ((int)(((byte)(58)))));
+            this.dgv_clientes.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle23;
             this.dgv_clientes.AutoGenerateColumns = false;
             this.dgv_clientes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_clientes.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(42)))), ((int)(((byte)(42)))));
             this.dgv_clientes.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgv_clientes.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgv_clientes.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(42)))), ((int)(((byte)(42)))));
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle13.Padding = new System.Windows.Forms.Padding(5);
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(75)))), ((int)(((byte)(10)))));
-            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_clientes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(42)))), ((int)(((byte)(42)))));
+            dataGridViewCellStyle24.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle24.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle24.Padding = new System.Windows.Forms.Padding(5);
+            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(75)))), ((int)(((byte)(10)))));
+            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_clientes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle24;
             this.dgv_clientes.ColumnHeadersHeight = 29;
             this.dgv_clientes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idclienteDataGridViewTextBoxColumn,
@@ -475,34 +478,34 @@
             this.correoDataGridViewTextBoxColumn,
             this.estadoDataGridViewTextBoxColumn});
             this.dgv_clientes.DataSource = this.clientesBindingSource2;
-            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(42)))), ((int)(((byte)(42)))));
-            dataGridViewCellStyle20.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle20.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(75)))), ((int)(((byte)(10)))));
-            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_clientes.DefaultCellStyle = dataGridViewCellStyle20;
+            dataGridViewCellStyle31.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle31.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(42)))), ((int)(((byte)(42)))));
+            dataGridViewCellStyle31.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle31.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle31.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(75)))), ((int)(((byte)(10)))));
+            dataGridViewCellStyle31.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle31.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_clientes.DefaultCellStyle = dataGridViewCellStyle31;
             this.dgv_clientes.EnableHeadersVisualStyles = false;
             this.dgv_clientes.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(75)))), ((int)(((byte)(10)))));
             this.dgv_clientes.Location = new System.Drawing.Point(24, 98);
             this.dgv_clientes.Name = "dgv_clientes";
             this.dgv_clientes.ReadOnly = true;
             this.dgv_clientes.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(42)))), ((int)(((byte)(42)))));
-            dataGridViewCellStyle21.Font = new System.Drawing.Font("Lucida Console", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle21.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(75)))), ((int)(((byte)(10)))));
-            dataGridViewCellStyle21.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_clientes.RowHeadersDefaultCellStyle = dataGridViewCellStyle21;
+            dataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(42)))), ((int)(((byte)(42)))));
+            dataGridViewCellStyle32.Font = new System.Drawing.Font("Lucida Console", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle32.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle32.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(75)))), ((int)(((byte)(10)))));
+            dataGridViewCellStyle32.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle32.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_clientes.RowHeadersDefaultCellStyle = dataGridViewCellStyle32;
             this.dgv_clientes.RowHeadersVisible = false;
-            dataGridViewCellStyle22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(42)))), ((int)(((byte)(42)))));
-            dataGridViewCellStyle22.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle22.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(75)))), ((int)(((byte)(10)))));
-            dataGridViewCellStyle22.SelectionForeColor = System.Drawing.Color.White;
-            this.dgv_clientes.RowsDefaultCellStyle = dataGridViewCellStyle22;
+            dataGridViewCellStyle33.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(42)))), ((int)(((byte)(42)))));
+            dataGridViewCellStyle33.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle33.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(75)))), ((int)(((byte)(10)))));
+            dataGridViewCellStyle33.SelectionForeColor = System.Drawing.Color.White;
+            this.dgv_clientes.RowsDefaultCellStyle = dataGridViewCellStyle33;
             this.dgv_clientes.RowTemplate.ReadOnly = true;
             this.dgv_clientes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_clientes.Size = new System.Drawing.Size(712, 535);
@@ -530,25 +533,11 @@
             this.dgv_clientes.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(75)))), ((int)(((byte)(10)))));
             this.dgv_clientes.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.White;
             // 
-            // gymDataSet4
-            // 
-            this.gymDataSet4.DataSetName = "gymDataSet4";
-            this.gymDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // clientesBindingSource2
-            // 
-            this.clientesBindingSource2.DataMember = "clientes";
-            this.clientesBindingSource2.DataSource = this.gymDataSet4;
-            // 
-            // clientesTableAdapter2
-            // 
-            this.clientesTableAdapter2.ClearBeforeFill = true;
-            // 
             // idclienteDataGridViewTextBoxColumn
             // 
             this.idclienteDataGridViewTextBoxColumn.DataPropertyName = "id_cliente";
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.idclienteDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.idclienteDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle25;
             this.idclienteDataGridViewTextBoxColumn.HeaderText = "ID";
             this.idclienteDataGridViewTextBoxColumn.Name = "idclienteDataGridViewTextBoxColumn";
             this.idclienteDataGridViewTextBoxColumn.ReadOnly = true;
@@ -556,8 +545,8 @@
             // nombreDataGridViewTextBoxColumn
             // 
             this.nombreDataGridViewTextBoxColumn.DataPropertyName = "nombre";
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.nombreDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.nombreDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle26;
             this.nombreDataGridViewTextBoxColumn.HeaderText = "Nombre";
             this.nombreDataGridViewTextBoxColumn.Name = "nombreDataGridViewTextBoxColumn";
             this.nombreDataGridViewTextBoxColumn.ReadOnly = true;
@@ -565,8 +554,8 @@
             // edadDataGridViewTextBoxColumn
             // 
             this.edadDataGridViewTextBoxColumn.DataPropertyName = "edad";
-            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.edadDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.edadDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle27;
             this.edadDataGridViewTextBoxColumn.HeaderText = "Edad";
             this.edadDataGridViewTextBoxColumn.Name = "edadDataGridViewTextBoxColumn";
             this.edadDataGridViewTextBoxColumn.ReadOnly = true;
@@ -574,8 +563,8 @@
             // celularDataGridViewTextBoxColumn
             // 
             this.celularDataGridViewTextBoxColumn.DataPropertyName = "celular";
-            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.celularDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewCellStyle28.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.celularDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle28;
             this.celularDataGridViewTextBoxColumn.HeaderText = "Celular";
             this.celularDataGridViewTextBoxColumn.Name = "celularDataGridViewTextBoxColumn";
             this.celularDataGridViewTextBoxColumn.ReadOnly = true;
@@ -583,8 +572,8 @@
             // correoDataGridViewTextBoxColumn
             // 
             this.correoDataGridViewTextBoxColumn.DataPropertyName = "correo";
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.correoDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.correoDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle29;
             this.correoDataGridViewTextBoxColumn.HeaderText = "Correo";
             this.correoDataGridViewTextBoxColumn.Name = "correoDataGridViewTextBoxColumn";
             this.correoDataGridViewTextBoxColumn.ReadOnly = true;
@@ -592,17 +581,51 @@
             // estadoDataGridViewTextBoxColumn
             // 
             this.estadoDataGridViewTextBoxColumn.DataPropertyName = "estado";
-            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.estadoDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle19;
+            dataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.estadoDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle30;
             this.estadoDataGridViewTextBoxColumn.HeaderText = "Estado";
             this.estadoDataGridViewTextBoxColumn.Name = "estadoDataGridViewTextBoxColumn";
             this.estadoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // clientesBindingSource2
+            // 
+            this.clientesBindingSource2.DataMember = "clientes";
+            this.clientesBindingSource2.DataSource = this.gymDataSet4;
+            // 
+            // gymDataSet4
+            // 
+            this.gymDataSet4.DataSetName = "gymDataSet4";
+            this.gymDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // clientesTableAdapter2
+            // 
+            this.clientesTableAdapter2.ClearBeforeFill = true;
+            // 
+            // btn_actualizar
+            // 
+            this.btn_actualizar.BackColor = System.Drawing.Color.Transparent;
+            this.btn_actualizar.BorderRadius = 25;
+            this.btn_actualizar.CheckedState.Parent = this.btn_actualizar;
+            this.btn_actualizar.CustomImages.Parent = this.btn_actualizar;
+            this.btn_actualizar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(75)))), ((int)(((byte)(10)))));
+            this.btn_actualizar.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(75)))), ((int)(((byte)(10)))));
+            this.btn_actualizar.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_actualizar.ForeColor = System.Drawing.Color.White;
+            this.btn_actualizar.HoverState.Parent = this.btn_actualizar;
+            this.btn_actualizar.Location = new System.Drawing.Point(375, 41);
+            this.btn_actualizar.Name = "btn_actualizar";
+            this.btn_actualizar.ShadowDecoration.Parent = this.btn_actualizar;
+            this.btn_actualizar.Size = new System.Drawing.Size(180, 45);
+            this.btn_actualizar.TabIndex = 17;
+            this.btn_actualizar.Text = "Actualizar";
+            this.btn_actualizar.Click += new System.EventHandler(this.btn_actualizar_Click);
             // 
             // Clientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(58)))), ((int)(((byte)(58)))));
+            this.Controls.Add(this.btn_actualizar);
             this.Controls.Add(this.dgv_clientes);
             this.Controls.Add(this.btn_inactivos);
             this.Controls.Add(this.guna2GradientPanel2);
@@ -625,8 +648,8 @@
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_clientes)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gymDataSet4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientesBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gymDataSet4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -672,5 +695,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn celularDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn correoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn estadoDataGridViewTextBoxColumn;
+        private Guna.UI2.WinForms.Guna2GradientButton btn_actualizar;
     }
 }

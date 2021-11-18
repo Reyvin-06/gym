@@ -27,7 +27,6 @@ namespace Gym
             DataTable dt = new DataTable();
             da.Fill(dt);
             dgv_clientes.DataSource = dt;
-            cn.Close();
 
             int clientes =  dgv_clientes.RowCount;
             lb_personasregistradas.Text = clientes.ToString();
@@ -37,45 +36,55 @@ namespace Gym
         {
             try
             {
-                cn.Open();
-
-                SqlCommand cmd = cn.CreateCommand();
-                SqlCommand cmc = cn.CreateCommand();
-
-
-                cmc.CommandType = CommandType.Text;
-                cmc.CommandText = "INSERT INTO clientes(nombre,edad,celular,correo,estado) VALUES ('" + txtnombre.Text + "','" + txtedad.Text + "','" + txtcelular.Text + "','" + txtcorreo.Text + "','" + "Activo" + "')";
-
-                int filasafectadas = cmc.ExecuteNonQuery();
-
-                if (filasafectadas > 0)
+                if (txtnombre.Text == "" || txtedad.Text == "" || txtcelular.Text == "" || txtcorreo.Text == "")
                 {
-                    MessageBox.Show("se agrego");
-                    txtcorreo.Text = "";
-                    txtnombre.Text = "";
-                    txtedad.Text = "";
-                    txtcelular.Text = "";
+                    MessageBox.Show("Favor de llenar los campos vacios");
                 }
                 else
                 {
-                    MessageBox.Show("no se agrego");
+                    cn.Open();
+
+                    SqlCommand cmd = cn.CreateCommand();
+                    SqlCommand cmc = cn.CreateCommand();
+
+
+                    cmc.CommandType = CommandType.Text;
+                    cmc.CommandText = "INSERT INTO clientes(nombre,edad,celular,correo,estado) VALUES " +
+                        "('" + txtnombre.Text + "','" + txtedad.Text + "','" + txtcelular.Text + "','" + txtcorreo.Text + "','" + "Inactivo" + "')";
+
+                    int filasafectadas = cmc.ExecuteNonQuery();
+
+                    if (filasafectadas > 0)
+                    {
+                        MessageBox.Show("se agrego");
+                        txtcorreo.Text = "";
+                        txtnombre.Text = "";
+                        txtedad.Text = "";
+                        txtcelular.Text = "";
+                        int clientes = dgv_clientes.RowCount;
+                        lb_personasregistradas.Text = clientes.ToString();
+                    }
+                    else
+                    {
+                        MessageBox.Show("no se agrego");
+                    }
+
+                    cmd.CommandType = CommandType.Text;
+                    cmd.CommandText = "Select * from clientes where estado = 'Activo'";
+                    cmd.ExecuteNonQuery();
+
+                    DataTable dt = new DataTable();
+                    SqlDataAdapter da = new SqlDataAdapter(cmd);
+
+                    da.Fill(dt);
+
+                    dgv_clientes.DataSource = dt;
+
+                    cn.Close();
+
+                    
                 }
-
-                cmd.CommandType = CommandType.Text;
-                cmd.CommandText = "Select * from clientes where estado = 'Activo'";
-                cmd.ExecuteNonQuery();
-
-                DataTable dt = new DataTable();
-                SqlDataAdapter da = new SqlDataAdapter(cmd);
-
-                da.Fill(dt);
-
-                dgv_clientes.DataSource = dt;
-
-                cn.Close();
-
-                int clientes = dgv_clientes.RowCount;
-                lb_personasregistradas.Text = clientes.ToString();
+                
             }
             catch (Exception ex)
             {
@@ -119,6 +128,31 @@ namespace Gym
         private void lb_personasregistradas_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void btn_actualizar_Click(object sender, EventArgs e)
+        {
+            SqlCommand cmd = new SqlCommand("Select * from clientes where estado = 'Activo'", cn);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            dgv_clientes.DataSource = dt;
+        }
+
+        private void txtedad_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!Char.IsNumber(e.KeyChar) && (e.KeyChar != (char)Keys.Back))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtcelular_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!Char.IsNumber(e.KeyChar) && (e.KeyChar != (char)Keys.Back))
+            {
+                e.Handled = true;
+            }
         }
     }
 }
